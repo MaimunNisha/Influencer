@@ -40,7 +40,8 @@ CSS INDEX
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap");
 :root {
-  --ttRed: #FF0000;
+  /* --ttRed: #FF0000; */
+  --ttRed: #40D8E7;
   --ttLightRed: #F2EEEA;
   --ttGray: #B5B5B5;
   --ttGray2: #808080;
@@ -48,7 +49,7 @@ CSS INDEX
   --white: #fff;
   --tt-pink: #F820A3;
   --tt-gold: #FFA945;
-  --tt-gradient-1: linear-gradient(90deg, var(--tt-pink) 0%, var(--tt-gold) 100%);
+  --tt-gradient-1: linear-gradient(90deg,  #e90bf8 0%, #04d0ee 100%);
   --font-inter: "Inter", sans-serif;
   --plyr-color-main: var(--ttRed);
 }
@@ -475,7 +476,8 @@ input {
   inset: 0;
   border-radius: 6px;
   z-index: -1;
-  background: linear-gradient(90deg, var(--tt-gold) 0%, var(--tt-pink) 100%);
+  /* background: linear-gradient(90deg, var(--tt-gold) 0%, var(--tt-pink) 100%); */
+  background: linear-gradient(90deg, #04d0ee 0%, #e90bf8 100%);
   transition: 0.4s ease;
 }
 .jo-btn:hover {
@@ -910,7 +912,8 @@ input {
   z-index: 99;
   inset: 0 6.25vw auto;
   padding: 0 1.563vw;
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
+  background-color: var(--white);
   backdrop-filter: blur(75px);
   border-radius: 0px 0px 20px 20px;
   display: flex;
@@ -1116,12 +1119,14 @@ input {
 }
 
 .jo-banner {
-  background: url(../img/banner-2-bg.jpg) no-repeat center center;
+  /* background: url(../img/banner-2-bg.jpg) no-repeat center center; */
   background-size: cover;
   padding: 8.125vw 0 0;
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  background-image: linear-gradient(to right top, #34a19c, #299da3, #2598a9, #2a93ad, #368eaf, #3995b7, #3c9cbf, #3fa3c7, #3ab9d7, #3bcfe3, #48e5ec, #5ffbf1);
 }
 @media screen and (max-width: 1599px) {
   .jo-banner {
@@ -1615,7 +1620,7 @@ input {
   left: 0;
   top: 0;
   border-radius: 10px;
-  background: linear-gradient(90deg, var(--tt-pink) 0%, var(--tt-gold) 100%);
+  background: linear-gradient(90deg, #04d0ee 0%, #e90bf8 100%);
   z-index: -1;
   opacity: 0;
   transition: 0.4s ease;
@@ -2521,7 +2526,8 @@ input {
 }
 .jo-footer-top {
   padding: 2.76vw 1.563vw;
-  background: linear-gradient(90deg, var(--ttRed), var(--tt-gold));
+  /* background: linear-gradient(90deg, var(--ttRed), var(--tt-gold)); */
+  background-image: linear-gradient(to right top, #ffffff, #dce7fa, #a3d5f0, #5bc5d4, #00b3a4);
   border-radius: 0 0 20px 20px;
 }
 @media screen and (max-width: 1199px) {
@@ -2601,7 +2607,7 @@ input {
   inset: -1px;
   z-index: -1;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--tt-pink) 0%, var(--tt-gold) 100%);
+  background: var(--tt-gradient-1);;
   opacity: 0;
   transition: 0.4s ease;
 }
