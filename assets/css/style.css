@@ -49,7 +49,7 @@ CSS INDEX
   --black: #000;
   --white: #fff;
   --tt-pink: #F820A3;
-  --tt-gold: #FFA945;
+  --tt-gold: #098abd;
   --tt-gradient-1: linear-gradient(90deg, #f80b6af2  0%, #04d0ee 100%);
   --font-inter: "Inter", sans-serif;
   --plyr-color-main: var(--ttRed);
@@ -3458,7 +3458,7 @@ input {
 
 @media screen and (max-width: 1599px) {
   .jo-service-details-sidebar .service-list a {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 

@@ -1,3 +1,5 @@
 .main_logo{
 width: 185px;
 }
+.bg-logo{
+    background-image: linear-gradient(to bottom, #23b8de, #83c6ee, #bbd6f7, #e4e9fb, #ffffff);}
