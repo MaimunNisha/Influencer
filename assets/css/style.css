@@ -1030,7 +1030,7 @@ input {
   inset: 0 6.25vw auto;
   padding: 0 1.563vw;
   /* background: rgba(255, 255, 255, 0.5); */
-  background-color: var(--white);
+  background-color: rgb(255 255 255 / 77%);
   backdrop-filter: blur(75px);
   border-radius: 0px 0px 20px 20px;
   display: flex;
@@ -2401,8 +2401,8 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--ttRed);
   border-radius: 50%;
   padding-top: 1px;
 }
@@ -2853,15 +2853,15 @@ input {
   gap: 15px;
 }
 
-.tt-footer-top__socials a {
+.tt-footer-top__socials>a {
   width: 47px;
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(195, 22, 22, 0.7);
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #E11D77;
   border-radius: 50%;
   transition: 0.4s ease;
 }
@@ -2914,7 +2914,12 @@ input {
 
 .jo-footer {
   /* background-color: var(--black); */
-  background: url(../img/intro-live-bg.png) var(--black) no-repeat center center;
+  /* background: url(../img/intro-live-bg.png) var(--black) no-repeat center center; */
+  /* background: url(../img/11.png)    ; */
+  object-fit:contain;
+     background: url(../img/23.png) no-repeat center center; 
+
+
 
     background-size: cover;
 }
@@ -2922,8 +2927,10 @@ input {
 .jo-footer-top {
   padding: 2.76vw 1.563vw;
   /* background: linear-gradient(90deg, var(--ttRed), var(--tt-gold)); */
-  background-image: linear-gradient(to right top, #ffffff, #dce7fa, #a3d5f0, #5bc5d4, #00b3a4);
+  /* background-image: linear-gradient(to right top, #ffffff, #dce7fa, #a3d5f0, #5bc5d4, #00b3a4); */
+  background-image: linear-gradient(to top, #5ffbf1, #88fbff, #affaff, #d1f9ff, #eef9ff, #eef9ff, #eef9ff, #eef9ff, #d1f9ff, #affaff, #88fbff, #5ffbf1);
   border-radius: 0 0 20px 20px;
+  
 }
 
 @media screen and (max-width: 1199px) {
@@ -2953,7 +2960,7 @@ input {
   background-color: var(--white);
   border-radius: 999px;
   padding: 5px;
-}
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
 
 @media screen and (max-width: 479px) {
   .jo-footer-top__nwsltr {
@@ -3003,8 +3010,8 @@ input {
 .jo-footer-top__socials a {
   position: relative;
   z-index: 1;
-  border: 1px solid var(--white);
-  color: var(--white);
+  border: 1px solid var(--tt-pink);
+  color: var(--tt-gold);
 }
 
 .jo-footer-top__socials a:hover::before {
