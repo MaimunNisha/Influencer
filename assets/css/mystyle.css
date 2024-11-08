@@ -92,6 +92,7 @@
   display: flex; 
   justify-items: center;
 }
+
 .wavy-line {
   width: 150px;
   height:100px;
@@ -188,3 +189,268 @@ transform: scale(1);  }
 }
 
 
+
+   /* wave button */
+   .wave-btn {
+    position: relative;
+   background: var(--tt-gradient-1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 42px;
+    gap: 3px;
+    border-radius: 6px;
+    color: var(--white);
+    z-index: 1;
+    /* transition: all 0.4s; */
+overflow: hidden;
+text-decoration: none;
+  }
+
+  .wave-btn>span {
+    position: relative;
+    z-index: 1;
+  }
+.wave-btn>span>i{
+  
+    font-size: 10px;
+    padding-top: 1px;
+    padding-right: 5px;
+
+}
+.wave-btn>span>a>i{
+  
+  font-size: 15px;
+  padding-right: 5px;
+  margin-top: 5px;
+
+}
+  .wave-btn>.water {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right top, #44bebe, #0aadc1, #009bc1, #0088bd, #2a74b3);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+  }
+
+  .wave-btn>.water::after,
+  .wave-btn>.water::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+  }
+
+  .wave-btn>.water::before {
+    border-radius: 45%;
+    background-image: linear-gradient(to right top, #44bebe, #0aadc1, #009bc1, #0088bd, #2a74b3);
+    animation: water 5s linear infinite;
+  }
+
+  .wave-btn>.water::after {
+    border-radius: 40%;
+    background-image: linear-gradient(to right top, #44bebe, #0aadc1, #009bc1, #0088bd, #2a74b3);
+    animation: water 10s linear infinite;
+  }
+
+  .wave-btn:hover .water {
+    top: -120px;
+    color: var(--white);
+  }
+
+  @keyframes water {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+
+   /* industry_expertise_innovation_layout_outer */
+.industry_expertise_innovation_layout_outer {
+    /* background-color: #66fcf1; */
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: url("/assets/img/23.png") center center;
+background-repeat: no-repeat;
+object-fit:contain;
+}
+        .industry_expertise_innovation_layout_inner {
+            /* background:rgba(255, 255, 255, 0.05); */
+            height: 650px;
+            width: 650px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+
+        .round {
+            position: relative;
+            width: 550px;
+            height: 550px;
+            border: 2px dotted #66fcf1;
+            border-radius: 50%;
+
+        }
+
+        .round .icon {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            left: -50%;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .round .icon .img10x {
+            position: absolute;
+            background-color: #f8fafc;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+            transition: 0.5s;
+            transform: rotate(calc(360deg/10 * var(--i)));
+            transform-origin: 305px;
+            z-index: 1;
+            /* overflow: hidden; */
+
+        }
+
+        .round .icon .img10x.active {
+            /* border-radius: 50%; */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 3px #0095ff, 0 0 0 6px #f8fafc;
+        }
+
+        .round .icon .img10x.active {
+            background-color: #66fcf1;
+        }
+
+        .round .icon .img10x>img {
+            height: 30px;
+            width: 30px;
+            transform: rotate(calc(-360deg/10 * var(--i)));
+
+        }
+
+        .round .icon .img10x:hover {
+            /* width: 30px; */
+            /* height: 30px; */
+            /* transform: scale(1); */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #0095ff, 0 0 0 8px #f8fafc;
+        }
+
+        .toggle {
+            position: absolute;
+            inset: 0;
+            /* overflow: hidden; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .toggle::before {
+            content: '';
+            position: absolute;
+            inset: 50px;
+            border: 4px solid transparent;
+            border-left: 3px solid #66fcf1;
+            border-right: 3px solid #f8fafc;
+            border-radius: 50%;
+            animation: animte_01 5s linear infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        @keyframes animte_01 {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+
+        .toggle::after {
+            content: '';
+            position: absolute;
+            inset: 100px;
+            border: 4px solid transparent;
+            border-left: 3px solid #0095ff;
+            border-right: 3px solid #f8fafc;
+            border-radius: 50%;
+            animation: animte_02 2.5s linear infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        @keyframes animte_02 {
+            0% {
+                rotate: 360deg;
+            }
+
+            100% {
+                rotate: 0deg;
+            }
+        }
+
+        .content10x {
+            position: absolute;
+            transform: scale(0);
+            transform: 0.5s;
+            opacity: 0;
+        }
+
+        .content10x.active {
+            transform: scale(1);
+            opacity: 1;
+            transition-delay: .5s;
+
+        }
+
+        .content10x .card {
+            width: 250px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .content10x .card h2 {
+            position: relative;
+            font-size: 2.25em;
+            color: #fff;
+            line-height: 1px;
+            text-align: center;
+
+        }
+
+        .content10x .card p {
+            /* margin-top: -20px; */
+            text-align: center;
+            font-size: 1.02em;
+        }
