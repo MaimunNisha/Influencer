@@ -1491,6 +1491,18 @@ input {
   .jo-banner__followers {
     padding: 18px 22px;
   }
+  .jo-banner__title span.styled::after {
+
+    left: -7px;
+    top: -14px;
+    inset: 0px;
+
+}
+.jo-banner__title span.styled::before {
+ 
+  top: -2px;
+ 
+}
 }
 
 .jo-banner__followers .number {
