@@ -852,10 +852,12 @@ opacity: 1;
   opacity: 1;
 }
 @media screen and (max-width: 479px) {
+ 
   .whybest-card .whybest-content .whybest-details {
  
     transform: translateY(105px);
 }
+
 }
 @media screen and (max-width: 379px) {
   .whybest-card .whybest-content .whybest-details {
@@ -865,7 +867,7 @@ opacity: 1;
 @media screen and (max-width: 320px) {
   .whybest-card .whybest-content .whybest-details {
  
-    transform: translateY(160px);}
+    transform: translateY(130px);}
     .whybest-card:hover {
       height: 420px;
   }
