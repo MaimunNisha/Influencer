@@ -857,7 +857,11 @@ opacity: 1;
  
     transform: translateY(105px);
 }
-
+.jo-page-title {
+  color: var(--white);
+  margin-bottom: 3px;
+  padding-top: 60px !important;
+}
 }
 @media screen and (max-width: 379px) {
   .whybest-card .whybest-content .whybest-details {
@@ -871,4 +875,544 @@ opacity: 1;
     .whybest-card:hover {
       height: 420px;
   }
+  .form-outer form .page .label-set3 {
+    height: 175px !important;
 }
+}
+
+ul.blogs-tabs-list {
+   
+  display: flex
+;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dcdcdc;
+  justify-content: center;
+}
+ul.blogs-tabs-list li {
+  padding-left: 10px;
+}
+ul.blogs-tabs-list li.active a {
+  color: #fff;
+  background-color: var(--tt-gold);
+}
+ul.blogs-tabs-list li a {
+  padding: 7px 12px;
+  display: block;
+ text-decoration: none;
+  margin-bottom: 1rem;
+  position: relative;
+  color: var(--ttRed);
+  cursor: pointer;
+  background-color: #f6f9fa;
+  border-radius: 12px;
+  border: 1px solid var(--ttRed);
+}
+ul.blogs-tabs-list::after {
+  position: absolute;
+  top: 97px;
+  height: 34%;
+  content: "";
+  z-index: 1;
+}
+
+
+
+
+
+.containers {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 50px;
+}
+
+.containers header {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.containers .form-outer-flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.containers .form-outer {
+  width: 75%;
+  overflow: hidden;
+}
+
+.containers .form-outer form {
+  display: flex;
+  width: 400%;
+}
+
+.form-outer form .page {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+
+}
+.form-outer form .page{
+  display: block;
+}
+
+.form-outer form .page .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.form-outer form .page .field {
+  width: 100%;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+form .page .field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+form .page .field input {
+  height: 100%;
+  width: 95%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field input[type="file"] {
+  height: 74%;
+  width: 95%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 0px;
+  font-size: 18px;
+}
+form .page .field select {
+  height: 100%;
+    width: 95%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+.form-outer form .page .fields {
+  width: 100%;
+  height: 145px;
+  margin: 45px 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+form .page .field textarea {
+  height: 100%;
+  width: 95%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field .form-check{
+  line-height: 45px;
+}
+
+form .page .field .form-check input  {
+  height: 40%;
+margin-top: 15px;
+     width: 5%;
+
+  
+}
+form .page .field input[type="radio"] {
+  height: 40%;
+margin-top: 15px;
+border-radius: 50%;
+     width: 40%;
+}
+form .page .field .form-checks{
+  margin-left: 20px;
+}
+
+.field button {
+  width: 20%;
+  height: calc(70% + 5px);
+  border: none;
+  background: var(--tt-gradient-1);
+  /* margin-top: 20px; */
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  /* font-size: 18px; */
+  font-weight: 500;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  transition: 0.5s ease;
+}
+.field button:hover {
+  background-image: linear-gradient(to right top, #44bebe, #0aadc1, #009bc1, #0088bd, #2a74b3);
+}
+ .btns button {
+  margin-top: -20px !important;
+}
+.btns{
+  width: 100%;
+  float: right;
+  height: 50px;
+}
+
+ .btns button.prev {
+  margin-left: 0px;
+  font-size: 17px;
+  float: left;
+}
+
+.btns button.next {
+  margin-right: 30px;
+  float: right;
+
+}
+.float-next{
+  margin-top: -30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+justify-content: flex-end;
+margin-right: 0px;
+}
+.containers .progress-bars {
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+@media screen and (max-width: 479px) {
+  .containers .form-outer {
+    width: 90%;
+    overflow: hidden;
+}
+  .containers .progress-bars {
+    display: none;
+    
+  }
+  
+}
+.containers .progress-bars .step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.containers .progress-bars .step p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.progress-bars .step .bullet {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.progress-bars .step .bullet.active {
+  border-color:var(--ttRed);
+  background: var(--tt-gold);
+}
+
+.progress-bars .step .bullet span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress-bars .step .bullet.active span {
+  display: none;
+}
+
+.progress-bars .step .bullet:before,
+.progress-bars .step .bullet:after {
+  position: absolute;
+  content: '';
+  bottom: 9px;
+  right: -168px;
+  height: 3px;
+  width: 168px;
+  background: #262626;
+}
+
+.progress-bars .step .bullet.active:after {
+  background-image: linear-gradient(to right top, #44bebe, #0aadc1, #009bc1, #0088bd, #2a74b3);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+  100% {
+      transform: scaleX(1);
+  }
+}
+
+.progress-bars .step:last-child .bullet:before,
+.progress-bars .step:last-child .bullet:after {
+  display: none;
+}
+
+.progress-bars .step p.active {
+  color: var(--tt-gold);
+  transition: 0.2s linear;
+}
+
+.progress-bars .step .check {
+  position: absolute;
+  left: 50%;
+  top: 82%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.progress-bars .step .check.active {
+  display: block;
+  color: #fff;
+}
+
+
+.jo-service-details-widget .service-list .step-side {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.jo-service-details-widget .service-list .step-side a.active {
+  color: var(--tt-gold);
+  transition: 0.2s linear;
+  
+}
+
+.jo-service-details-widget .service-list .step-side .checks {
+  position: absolute;
+    left: 92%;
+    top: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 2;
+    line-height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #05E28D;
+}
+.jo-service-details-widget .service-list .step-side a.active:hover {
+  color: var(--tt-gold);
+  transition: 0.2s linear;
+}
+
+.jo-service-details-widget .service-list .step-side .checks.active {
+  display: block;
+  
+  color: var(--white);
+}
+.jo-service-details-widget .service-list .step-side:hover .checks.active {
+  color: var(--white);
+  transition: 0.2s linear;
+
+}
+.form-outer form .page .label-set3 {
+  height: 100px;
+}
+.label-set1s{
+  margin-left: 20px;
+  }
+@media (max-width:991px) {
+  .progress-bars .step .bullet::before,
+.progress-bars .step .bullet::after {
+  position: absolute;
+  content: '';
+  bottom: 9px;
+  right: -161px;
+  height: 3px;
+  width: 160px;
+}
+.form-outer form .page .label-set {
+  height: 90px;
+
+}
+.form-outer form .page .label-set2 {
+  height: 90px;
+}
+  .form-outer form .page .label-set3 {
+      height: 135px;
+  }
+.label-set1{
+margin-left: 20px;
+}
+.label-set1s{
+  margin-left: 20px;
+  }
+.label-set1-2{
+  width: 44%;
+  }
+  .label-set1-1{
+    margin-left: 20px;
+  }
+  form .page .field button {
+    width: 40%;}
+    
+  .jo-page-title {
+    color: var(--white);
+    margin-bottom: 3px;
+    padding-top: 20px;
+}
+}
+
+
+
+.jo-service-details-sidebar1 {
+  /* background-color: var(--tt-gold); */
+    background-color: #07ceed;
+
+  border-radius: 20px;
+  padding: 1.719vw;
+}
+
+@media screen and (max-width: 991px) {
+  .jo-service-details-sidebar1 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .jo-service-details-sidebar1>* {
+    width: calc((100% - 15px) / 2);
+  }
+}
+
+@media screen and (max-width: 991px) and (max-width: 479px) {
+  .jo-service-details-sidebar1>* {
+    width: calc((100% - 15px) / 1);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .jo-service-details-sidebar1 {
+    justify-content: center;
+    padding: 25px 14px;
+  }
+}
+
+.jo-service-details-sidebar1 .service-list li:not(:last-child) {
+  margin-bottom: clamp(12px, 1.042vw, 20px);
+}
+
+.jo-service-details-sidebar1 .service-list a {
+  padding: clamp(7.5px, 0.66vw, 12.5px) clamp(12px, 1.042vw, 20px);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(90deg, var(--ttRed), var(--tt-gold)); */
+  background-color: white;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--black);
+}
+
+@media screen and (max-width: 1599px) {
+  .jo-service-details-sidebar1 .service-list a {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .jo-service-details-sidebar1 .service-list a {
+    font-size: 16px;
+  }
+}
+
+.jo-service-details-sidebar1 .service-list a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 1px;
+  background-color:var(--white);
+  border-radius: 8.5px;
+  transition: 0.4s ease;
+}
+
+.jo-service-details-sidebar1 .service-list a:hover,
+.jo-service-details-sidebar1 .service-list a.current {
+  color: var(--white);
+}
+
+.jo-service-details-sidebar1 .service-list a:hover::before,
+.jo-service-details-sidebar1 .service-list a.current::before {
+  opacity: 0;
+}
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+
+  /* Hide all steps by default: */
+ 
+
+  /* button {
+    background: var(--tt-gradient-1);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  #prevBtn {
+    background-color: #bbbbbb;
+  } */
+
+  /* Make circles that indicate the steps of the form: */
+  /* .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+
+  .step.active {
+    opacity: 1;
+  } */
+
+  /* Mark the steps that are finished and valid: */
+  /* .step.finish {
+    background-color: #04AA6D;
+  } */

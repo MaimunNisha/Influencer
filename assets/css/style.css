@@ -81,7 +81,7 @@ svg path {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   vertical-align: top;
 }
 
@@ -552,8 +552,18 @@ input {
   z-index: 1;
   color: var(--white);
   overflow: hidden;
+  object-fit: cover;
 }
-
+.jo-breadcrumb1 {
+  padding: 10.323vw 0 11.458vw;
+  /* background: url(../img/registration.png) no-repeat center center; */
+  background: var(--tt-gradient-2);
+  background-size:cover;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
 @media screen and (max-width: 1199px) {
   .jo-breadcrumb {
     padding: 140px 0 100px;
@@ -574,7 +584,15 @@ input {
   z-index: -1;
   opacity: 80%;
 }
-
+/* 
+.jo-breadcrumb1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--tt-pink), var(--tt-gold));
+  z-index: -1;
+  opacity: 80%;
+} */
 .jo-breadcrumb-nav {
   display: flex;
   justify-content: center;
@@ -593,8 +611,21 @@ input {
 .jo-page-title {
   color: var(--white);
   margin-bottom: 3px;
+  
 }
-
+.jo-breadcrumb1 .jo-page-title{
+  position: relative;
+  font-size: 35px !important;
+}
+.jo-breadcrumb1 .jo-page-title::before{
+content: '';
+position: absolute;
+width: 20%;
+height: 3px;
+bottom: -10px;
+left: 40%;
+background-color: var(--white);
+}
 .jo-radio label {
   position: relative;
   display: inline-block;
@@ -796,24 +827,24 @@ input {
   position: absolute;
   width: 50px;
   height: 50px;
-  opacity: 50%;
+  opacity: 80%;
   transform-origin: left;
 }
 
 .jo-circle-box .circle-1 {
-  left: 10%;
-  top: 30%;
+  left: 15%;
+  top: 65%;
   animation: services-triangle 6s linear infinite alternate;
 }
 
 .jo-circle-box .circle-2 {
-  left: 30%;
-  top: 65%;
+  left: 50%;
+  top: 6%;
   animation: services-triangle 8s linear infinite alternate;
 }
 
 .jo-circle-box .circle-3 {
-  left: 70%;
+  left: 93%;
   top: 70%;
   animation: services-triangle 10s linear infinite alternate;
 }
@@ -821,6 +852,26 @@ input {
 .jo-circle-box .circle-4 {
   left: 90%;
   top: 32%;
+  animation: services-triangle 9s linear infinite alternate;
+}
+.jo-circle-box .circle-5 {
+  left: 10%;
+  top: 10%;
+  animation: services-triangle 6s linear infinite alternate;
+}
+.jo-circle-box .circle-6 {
+  left: 10%;
+  top: 92%;
+  animation: services-triangle 8s linear infinite alternate;
+}
+.jo-circle-box .circle-7 {
+  left: 70%;
+  top: 94%;
+  animation: services-triangle 10s linear infinite alternate;
+}
+.jo-circle-box .circle-8 {
+  left: 90%;
+  top: 15%;
   animation: services-triangle 9s linear infinite alternate;
 }
 
@@ -3584,7 +3635,9 @@ opacity: 0.7;
 
 .jo-service-details__cta .txt {
   position: absolute;
-  bottom: clamp(25px, 2.604vw, 50px);
+  /* bottom: clamp(25px, 2.604vw, 50px); */
+  bottom: clamp(25px, 10.604vw, 150px);
+
   z-index: 2;
   color: var(--white);
   text-align: center;
@@ -4540,15 +4593,22 @@ opacity: 0.7;
   background: url(../img/login-bg.jpg) no-repeat center center;
   background-size: cover;
 }
-
+.jo-logins {
+  padding: 12.4vw 0 10.19vw 35.62vw !important;}
 @media screen and (max-width: 767px) {
   .jo-login {
+    padding: 12.4vw 0 10.19vw 28.62vw;
+  }
+  .jo-logins {
     padding: 12.4vw 0 10.19vw 28.62vw;
   }
 }
 
 @media screen and (max-width: 479px) {
   .jo-login {
+    padding: 12.4vw 15px 10.19vw 15px;
+  }
+  .jo-logins {
     padding: 12.4vw 15px 10.19vw 15px;
   }
 }
@@ -4561,15 +4621,30 @@ opacity: 0.7;
   overflow: hidden;
   max-width: clamp(310px, 30.11vw, 573px);
 }
-
+.jo-auth-form-wrappers {
+  background-color: var(--white);
+  width: max-content;
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width:clamp(37px, 54.11vw, 848px) !important;
+}
 @media screen and (max-width: 767px) {
   .jo-auth-form-wrapper {
     max-width: clamp(290px, 60.11vw, 573px);
+  }
+  .jo-auth-form-wrappers{
+    max-width: clamp(290px, 60.11vw, 573px);
+
   }
 }
 
 @media screen and (max-width: 479px) {
   .jo-auth-form-wrapper {
+    max-width: clamp(290px, 100%, 100%);
+    width: 100%;
+  }
+  .jo-auth-form-wrappers {
     max-width: clamp(290px, 100%, 100%);
     width: 100%;
   }
