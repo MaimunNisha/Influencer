@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Protfolio/css/Portfolio_CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/font/flaticon_jio_-_influencer.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/plyr/plyr.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/no-ui-slider/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+</head>
+
+<body>
+    <link href="assets/js/myjava.js">
+    <!-- sidebar -->
+    <div class="jo-sidebar">
+        <div>
+            <!-- heading -->
+            <div class="jo-sidebar__heading d-flex justify-content-between align-items-center">
+                <img src="assets/img/logo-removebg-preview.png" alt="logo" class="main_logo">
+                <button type="button" class="jo-sidebar-close-btn"><i class="flaticon-add-plus-button"></i></button>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="jo-header-nav-in-mobile"></div>
+        </div>
+
+        <div>
+            <a href="about.html" class="jo-btn button--four button-four"><i class="flaticon-add-plus-button"></i>Follow
+                Me</a>
+            <!-- socials -->
+            <div
+                class="tt-footer-top__socials jo-footer-top__socials jo-sidebar-socials justify-content-start justify-content-sm-end">
+                <a href="#"><i class="flaticon-facebook-1"></i></a>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+                <a href="#"><i class="flaticon-social-media"></i></a>
+                <a href="#"><i class="flaticon-youtube-1"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER SECTION START -->
+    <header class="jo-header">
+        <a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="logo" class="main_logo"></a>
+        <div class="jo-header-right">
+            <div class="jo-header-nav">
+                <div class="to-go-to-sidebar-in-mobile">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Me</a>
+                        <div class="has-sub-menu relative">
+                            <a role="button">Streaming Videos</a>
+
+                            <ul class="jo-header-submenu">
+                                <li><a href="videos-1.html">Streaming Videos 1</a></li>
+                                <li><a href="videos-2.html">Streaming Videos 2</a></li>
+                                <li><a href="videos-3.html">Streaming Videos 3</a></li>
+                                <li><a href="video-details.html">Streaming Video Details</a></li>
+                            </ul>
+                        </div>
+                        <div class="has-sub-menu relative">
+                            <a role="button">Pages</a>
+
+                            <ul class="jo-header-submenu">
+                                <li><a href="video-shop.html">Video Shop</a></li>
+                                <li><a href="video-shop-details.html">Video Shop Details</a></li>
+                                <li><a href="service.html">Services</a></li>
+                                <li><a href="service-details.html">Service Details</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="influencerRegistration.html">Influencer Registration</a></li>
+                                <li><a href="influencerBrandRegistration.html">Influencer Brand Registration</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="has-sub-menu relative">
+                            <a role="button">Blog</a>
+
+                            <ul class="jo-header-submenu">
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </div>
+                        <a href="contact.html">Contact</a>
+
+                    </nav>
+                </div>
+            </div>
+            <div class="d-flex gap-2">
+                <!-- <a href="about.html" class="jo-btn button--four button-four"><i class="flaticon-add-plus-button"></i>Follow Me</a> -->
+                <button
+                    class="jo-header-sidebar-open-btn jo-btn button--four button-four px-3 d-inline-block d-lg-none"><i
+                        class="flaticon-menu"></i></button>
+                <a href="about.html">
+                    <button class="wave-btn">
+                        <span><i class="flaticon-add-plus-button"></i>Follow Me</span>
+                        <div class="water"></div>
+                    </button> </a>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+    <!-- Home Section  -->
+    <Section class="container-fluid home" id="home" data-aos="fade-up">
+        <div class="container">
+            <div class="row  align-items-center">
+
+                <div class="col-12 col-md-6 p-5 ">
+                    <div class="details" data-aos="fade-right">
+                        <p class="grading">Hi, There 👋</p>
+                        <div class="name">
+                            <h1>I'm <span class="name-color">Sapana</span></h1>
+                        </div>
+                        <h3 class="my_profession"><span style="color: #808080;">I'm a </span><span class="typing">
+                            </span></h3>
+                        <p>
+                            I am Sapana, a passionate content creator and influencer specializing in fashion, fitness,
+                            technology, travel. With a growing community of 45M followers, I strive to inspire and
+                            engage my audience through authentic content, valuable insights, and creative storytelling.
+                            I collaborate with brands to create impactful campaigns that resonate with my audience and
+                            drive real engagement.
+                        </p>
+                        <div class="jo-banner__btns">
+                            <a href="#" class="jo-btn button--four button-four">About Me</a>
+                            <a href="#" class="jo-btn button--four button-four">Contact Me</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 p-5 d-flex justify-content-center">
+                    <div class="profile-container" data-aos="zoom-in">
+                        <div class="profile-image">
+                            <img src="./Protfolio/img/hero/7.jpg" alt="Profile" class="img-fluid">
+                        </div>
+                        <div class="half-border"></div>
+                        <div class="nav-icons" data-aos="fade-left">
+                            <a href="#home" data-tooltip="Home" data-aos="fade-up"><i class="fa fa-home"></i></a>
+                            <!-- Home -->
+                            <a href="#about" data-tooltip="About" data-aos="fade-up"><i class="fa fa-user"></i></a>
+                            <!-- About -->
+                            <a href="#portfolio" data-tooltip="Portfolio" data-aos="fade-up"><i
+                                    class="fa fa-briefcase"></i></a>
+                            <!-- Portfolio / Work -->
+                            <a href="#blog" data-tooltip="Blog" data-aos="fade-up"><i
+                                    class="fa-solid fa-file-pen"></i></a>
+                            <!-- Blog / Articles -->
+                            <a href="#services" data-tooltip="Services" data-aos="fade-up"><i class="fa fa-cog"></i></a>
+                            <!-- Services -->
+                            <a href="#contact" data-tooltip="Contact" data-aos="fade-up"><i
+                                    class="fa fa-envelope"></i></a>
+                            <!-- Contact -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </Section>
+    <!-- // Home Section  -->
+
+    <!-- main Section  -->
+    <Section class="container-fluid main " data-aos="fade-in">
+        <div class="row">
+            <div class="col-md-1 sidebar ">
+                <div class="line"></div>
+                <div class="nav-icons-line">
+                    <a href="#home" data-tooltip="Home"><i class="fa fa-home"></i></a> <!-- Home -->
+                    <a href="#about" data-tooltip="About"><i class="fa fa-user"></i></a> <!-- About -->
+                    <a href="#portfolio" data-tooltip="Portfolio"><i class="fa fa-briefcase"></i></a>
+                    <!-- Portfolio / Work -->
+                    <a href="#blog" data-tooltip="Blog"><i class="fa-solid fa-file-pen"></i></a>
+                    <!-- Blog / Articles -->
+                    <a href="#services" data-tooltip="Services"><i class="fa fa-cog"></i></a> <!-- Services -->
+                    <a href="#contact" data-tooltip="Contact"><i class="fa fa-envelope"></i></a> <!-- Contact -->
+</div>
+            </div>
+            <div class="col-lg-11 col-md-11 col-10 content">
+                <div class="container ">
+                    <!-- about -->
+
+                    <section class="about-section py-5" id="about">
+                        <div class="about-main ">
+                            <div class="page-header">
+                                <h1>ABOUT ME</h1>
+                            </div>
+
+                            <div class="about-info" data-aos="fade-up">
+                                <h5>I'm <span>Sarita Smith,</span> Graphic Designer / Photographer</h5>
+                                <p>Infulancer is a dynamic platform that connects businesses with skilled freelancers,
+                                    offering
+                                    top-quality services like web development, graphic design, content writing, digital
+                                    marketing, and more. We ensure seamless collaboration and successful project
+                                    execution.
+                                </p>
+                            </div>
+
+                            <!-- SOCIAL LINKS SECTION START -->
+                            <section class="jo-social-links">
+                                <div class="jo-containers">
+                                    <div class="row g-sm-4 g-3">
+                                        <!-- single social -->
+                                        <div class="col-md-3 col-6 col-xxs-12">
+                                            <div class="jo-social-link" data-aos="fade-up" data-aos-delay="100">
+                                                <div class="icon icon-1"><img src="assets/img/social-icon-1.png"
+                                                        alt="Social Media Icon">
+                                                </div>
+                                                <div class="txt">
+                                                    <h5>Facebook</h5>
+                                                    <span>20.5K followers</span>
+                                                </div>
+                                                <a href="#" class="jo-btn button--four button-four">Follow Me</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- single social -->
+                                        <div class="col-md-3 col-6 col-xxs-12">
+                                            <div class="jo-social-link" data-aos="fade-up" data-aos-delay="200">
+                                                <div class="icon icon-2"><img src="assets/img/social-icon-2.png"
+                                                        alt="Social Media Icon">
+                                                </div>
+                                                <div class="txt">
+                                                    <h5>Instagram</h5>
+                                                    <span>30.9K followers</span>
+                                                </div>
+                                                <a href="#" class="jo-btn button--four button-four">Follow Me</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- single social -->
+                                        <div class="col-md-3 col-6 col-xxs-12">
+                                            <div class="jo-social-link" data-aos="fade-up" data-aos-delay="300">
+                                                <div class="icon icon-3"><img src="assets/img/social-icon-3.png"
+                                                        alt="Social Media Icon">
+                                                </div>
+                                                <div class="txt">
+                                                    <h5>Tiktok</h5>
+                                                    <span>2.5M followers</span>
+                                                </div>
+                                                <a href="#" class="jo-btn button--four button-four">Follow Me</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- single social -->
+                                        <div class="col-md-3 col-6 col-xxs-12">
+                                            <div class="jo-social-link" data-aos="fade-up" data-aos-delay="400">
+                                                <div class="icon icon-4"><img src="assets/img/social-icon-4.png"
+                                                        alt="Social Media Icon">
+                                                </div>
+                                                <div class="txt">
+                                                    <h5>YouTube</h5>
+                                                    <span>1.69M Sbscribers</span>
+                                                </div>
+                                                <a href="#" class="jo-btn button--four button-four">Subscribe</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- SOCIAL LINKS SECTION END -->
+
+   
+
+                            
+                        </div>
+                    </section>
+
+
+                    <!-- / about -->
+                     <!-- REELS SECTION START -->
+   <section class="jo-reels reels-section py-5">
+    <div class="jo-containers">
+        <div class="jo-reels-heading">
+            <button class="jo-slider-nav-btn jo-reels-slider-prev"><i class="flaticon-left-arrow"></i></button>
+            <h2 class="jo-section-title">Latest Video Reels</h2>
+            <button class="jo-slider-nav-btn jo-reels-slider-next"><i class="flaticon-right-arrow"></i></button>
+        </div>
+    </div>
+    <div class="jo-reels-container">
+        <div class="jo-reels-slider swiper">
+            <div class="swiper-wrapper wrapper">
+                <!-- single reel -->
+                <div class="swiper-slide">
+                    <div class="jo-reel">
+                        <div class="jo-reel-video position-relative">
+                            <video controls poster="assets/img/reel-thumb-1.jpg"
+                                src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                            <a href="#" class="link"><img src="assets/img/social-icon-1.png"
+                                    alt="platform logo">Facebook Reel</a>
+                        </div>
+                        <div class="jo-reel-txt">
+                            <h5 class="jo-reel-title"><a href="#">Can Robot Solve This ...?</a></h5>
+                            <div class="jo-reel-info">
+                                <span><i class="flaticon-bell"></i></span>
+                                <span>16M views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single reel -->
+                <div class="swiper-slide">
+                    <div class="jo-reel">
+                        <div class="jo-reel-video position-relative">
+                            <video controls poster="assets/img/reel-thumb-2.jpg"
+                                src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                            <a href="#" class="link"><img src="assets/img/social-icon-1.png"
+                                    alt="platform logo">Facebook Reel</a>
+                        </div>
+                        <div class="jo-reel-txt">
+                            <h5 class="jo-reel-title"><a href="#">Can Robot Solve This ...?</a></h5>
+                            <div class="jo-reel-info">
+                                <span><i class="flaticon-bell"></i></span>
+                                <span>16M views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single reel -->
+                <div class="swiper-slide">
+                    <div class="jo-reel">
+                        <div class="jo-reel-video position-relative">
+                            <video controls poster="assets/img/reel-thumb-3.jpg"
+                                src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                            <a href="#" class="link"><img src="assets/img/social-icon-1.png"
+                                    alt="platform logo">Facebook Reel</a>
+                        </div>
+                        <div class="jo-reel-txt">
+                            <h5 class="jo-reel-title"><a href="#">Can Robot Solve This ...?</a></h5>
+                            <div class="jo-reel-info">
+                                <span><i class="flaticon-bell"></i></span>
+                                <span>16M views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single reel -->
+                <div class="swiper-slide">
+                    <div class="jo-reel">
+                        <div class="jo-reel-video position-relative">
+                            <video controls poster="assets/img/reel-thumb-4.jpg"
+                                src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                            <a href="#" class="link"><img src="assets/img/social-icon-1.png"
+                                    alt="platform logo">Facebook Reel</a>
+                        </div>
+                        <div class="jo-reel-txt">
+                            <h5 class="jo-reel-title"><a href="#">Can Robot Solve This ...?</a></h5>
+                            <div class="jo-reel-info">
+                                <span><i class="flaticon-bell"></i></span>
+                                <span>16M views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single reel -->
+                <div class="swiper-slide">
+                    <div class="jo-reel">
+                        <div class="jo-reel-video position-relative">
+                            <video controls poster="assets/img/reel-thumb-5.jpg"
+                                src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                            <a href="#" class="link"><img src="assets/img/social-icon-1.png"
+                                    alt="platform logo">Facebook Reel</a>
+                        </div>
+                        <div class="jo-reel-txt">
+                            <h5 class="jo-reel-title"><a href="#">Can Robot Solve This ...?</a></h5>
+                            <div class="jo-reel-info">
+                                <span><i class="flaticon-bell"></i></span>
+                                <span>16M views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single reel -->
+                <div class="swiper-slide">
+                    <div class="jo-reel">
+                        <div class="jo-reel-video position-relative">
+                            <video controls poster="assets/img/reel-thumb-1.jpg"
+                                src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                            <a href="#" class="link"><img src="assets/img/social-icon-1.png"
+                                    alt="platform logo">Facebook Reel</a>
+                        </div>
+                        <div class="jo-reel-txt">
+                            <h5 class="jo-reel-title"><a href="#">Can Robot Solve This ...?</a></h5>
+                            <div class="jo-reel-info">
+                                <span><i class="flaticon-bell"></i></span>
+                                <span>16M views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single reel -->
+                <div class="swiper-slide">
+                    <div class="jo-reel">
+                        <div class="jo-reel-video position-relative">
+                            <video controls poster="assets/img/reel-thumb-2.jpg"
+                                src="https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4"></video>
+                            <a href="#" class="link"><img src="assets/img/social-icon-1.png"
+                                    alt="platform logo">Facebook Reel</a>
+                        </div>
+                        <div class="jo-reel-txt">
+                            <h5 class="jo-reel-title"><a href="#">Can Robot Solve This ...?</a></h5>
+                            <div class="jo-reel-info">
+                                <span><i class="flaticon-bell"></i></span>
+                                <span>16M views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- REELS SECTION END -->
+                </div>
+            </div>
+           
+</div>
+
+    </Section>
+    <!-- // main Section  -->
+    <!-- FOOTER SECTION START -->
+    <footer class="jo-footer">
+        <div class="jo-container">
+            <!-- footer top -->
+            <div class="jo-footer-top">
+                <div class="row gx-4 gy-sm-5 gy-4 align-items-center">
+                    <div class="col-lg-3 col-6 col-xxs-12">
+                        <a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="logo"
+                                class="logo"></a>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 order-2">
+                        <!-- nwsltr -->
+                        <form action="#" class="jo-footer-top__nwsltr">
+                            <input type="email" name="jo-nwsltr-email" id="jo-nwsltr-email" placeholder="Email Address">
+                            <button class="jo-btn" type="submit">Get Newsletter</button>
+                        </form>
+                    </div>
+                    <!-- socials -->
+
+                    <div class="col-lg-3 col-6 col-xxs-12 order-lg-2 order-1">
+                        <div
+                            class="tt-footer-top__socials jo-footer-top__socials justify-content-start justify-content-sm-end">
+                            <a href="#" class="box"><i class="flaticon-facebook-1"></i></a>
+                            <a href="#" class="box"><i class="flaticon-twitter"></i></a>
+                            <a href="#" class="box"><i class="flaticon-social-media"></i></a>
+                            <a href="#" class="box"><i class="flaticon-youtube-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer middle -->
+            <div class="jo-footer-middle">
+                <div class="row g-4">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="jo-footer-widget jo-footer-contact">
+                            <h5 class="jo-footer-widget__title">Get in Touch</h5>
+                            <a href="mailto:contact.me@gmail.com">contact.me@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="jo-footer-widget jo-footer-links">
+                            <h5 class="jo-footer-widget__title">Browse Categories</h5>
+                            <div class="links">
+                                <a href="#">Music</a>
+                                <a href="#">Sports</a>
+                                <a href="#">Gaming</a>
+                                <a href="#">Fashion</a>
+                                <a href="#">Art</a>
+                                <a href="#">Photography</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="jo-footer-widget jo-footer-gallery">
+                            <h5 class="jo-footer-widget__title">Instagram feed</h5>
+                            <div class="imgs flex-wrap wrapper">
+                                <img src="assets/img/footer-img-1.jpg" alt="Footer Image">
+                                <img src="assets/img/footer-img-2.jpg" alt="Footer Image">
+                                <img src="assets/img/footer-img-3.jpg" alt="Footer Image">
+                                <img src="assets/img/footer-img-4.jpg" alt="Footer Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer bottom -->
+            <div class="tt-footer-bottom text-center">
+                <p class="mb-0">Copyright ©2024 Developed by&nbsp;<a href="https://theonewebtechnology.com/">The One Web
+                        Technology Pvt. Ltd.</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/plyr/plyr.polyfilled.js"></script>
+    <script src="assets/vendor/no-ui-slider/nouislider.min.js"></script>
+    <script src="assets/vendor/fs-lightbox/fslightbox.js"></script>
+
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Java scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        referrerpolicy="no-referrer"></script>
+    <script>
+        // typing
+        var typed = new Typed(".typing", {
+            strings: ["Influencer !", "Youtuber !", "Blogger !", "Content Creator !"],
+            typeSpeed: 100,
+            BackSpeed: 60,
+            loop: true
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                once: true,
+                duration: 800
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
